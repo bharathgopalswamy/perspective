@@ -35,7 +35,7 @@ ARROW_PATH = os.path.join(
     "tools",
     "perspective-bench",
     "dist",
-    "benchmark-python.arrow",
+    "benchmark-python.feather",
 )
 
 
@@ -224,7 +224,7 @@ class Runner(object):
         if self._table is None:
             return
 
-        logging.debug("Writing results to `benchmark-python.arrow`")
+        logging.debug("Writing results to `benchmark-python.feather`")
         if not os.path.exists(os.path.dirname(ARROW_PATH)):
             os.makedirs(os.path.dirname(ARROW_PATH))
 
@@ -273,7 +273,7 @@ class Runner(object):
                 if os.path.exists(ARROW_PATH):
                     # if arrow exists, append to it
                     with open(ARROW_PATH, "rb") as arr:
-                        print("Reading table from pre-existing benchmark-python.arrow")
+                        print("Reading table from pre-existing benchmark-python.feather")
                         self._table = Table(arr.read())
                     self._table.update([result])
                 else:

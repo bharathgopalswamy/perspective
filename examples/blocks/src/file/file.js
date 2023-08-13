@@ -97,7 +97,7 @@ window.addEventListener("DOMContentLoaded", function () {
         };
 
         // Read the contents of the file - triggering the onload when finished.
-        if (file.name.endsWith(".feather") || file.name.endsWith(".arrow")) {
+        if (file.name.endsWith(".feather") || file.name.endsWith(".feather")) {
             reader.readAsArrayBuffer(file);
         } else {
             reader.readAsText(file);

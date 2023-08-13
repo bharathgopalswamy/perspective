@@ -24,7 +24,7 @@ from perspective import Table, PerspectiveManager, PerspectiveTornadoHandler
 
 here = os.path.abspath(os.path.dirname(__file__))
 file_path = os.path.join(
-    here, "..", "..", "node_modules", "superstore-arrow", "superstore.arrow"
+    here, "..", "..", "node_modules", "superstore-arrow", "superstore.feather"
 )
 
 IS_MULTI_THREADED = True

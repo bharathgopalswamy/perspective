@@ -29,7 +29,7 @@ file_path = os.path.join(
     "..",
     "node_modules",
     "superstore-arrow",
-    "superstore.arrow",
+    "superstore.feather",
 )
 
 

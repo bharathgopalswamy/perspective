@@ -148,7 +148,7 @@ function template(is_dark) {
             }
             window.addEventListener('DOMContentLoaded', function () {
                 var xhr = new XMLHttpRequest();
-                xhr.open('GET', '/node_modules/superstore-arrow/superstore.arrow', true);
+                xhr.open('GET', '/node_modules/superstore-arrow/superstore.feather', true);
                 xhr.responseType = "arraybuffer"
                 xhr.onload = on_load.bind(xhr);
                 xhr.send(null);

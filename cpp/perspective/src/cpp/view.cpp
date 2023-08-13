@@ -1087,6 +1087,9 @@ View<CTX_T>::data_slice_to_arrow(
     buffer = *allocated;
     arrow::io::BufferOutputStream sink(buffer);
     auto options = arrow::ipc::IpcWriteOptions::Defaults();
+    auto codec = arrow::util::Codec::Create(arrow::Compression::LZ4_FRAME);
+    options.codec = std::move(codec).ValueUnsafe();
+    options.use_threads = false;
     auto res = arrow::ipc::MakeStreamWriter(&sink, arrow_schema, options);
     std::shared_ptr<arrow::ipc::RecordBatchWriter> writer = *res;
     PSP_CHECK_ARROW_STATUS(writer->WriteRecordBatch(*batches));

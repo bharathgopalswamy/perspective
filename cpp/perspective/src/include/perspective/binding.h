@@ -84,7 +84,7 @@ namespace binding {
      *
      * Implementations of these methods access underlying heap memory and create
      * contiguous blocks of data which conform to the arrow schema; these
-     * methods should not be used to parse `.arrow` files or access
+     * methods should not be used to parse `.feather` files or access
      * arrow-formatted data in memory. Instead, arrow data parsing and
      * manipulation should be implemented in the binding language, using
      * appropriate libraries.

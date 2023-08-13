@@ -39,7 +39,7 @@ async function persist_to_arrow(obs_records) {
     }
 
     fs.writeFileSync(
-        path.join(__dirname, "../../dist/benchmark-js.arrow"),
+        path.join(__dirname, "../../dist/benchmark-js.feather"),
         Buffer.from(arrow),
         "binary"
     );

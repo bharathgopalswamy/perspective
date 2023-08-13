@@ -49,7 +49,7 @@ const generate_notebook = (notebook_name, cells) => {
                 "import pandas as pd\n",
                 "import numpy as np\n",
                 "arrow_data = None\n",
-                "with open('test.arrow', 'rb') as arrow: \n    arrow_data = arrow.read()",
+                "with open('test.feather', 'rb') as arrow: \n    arrow_data = arrow.read()",
             ],
         },
     ];

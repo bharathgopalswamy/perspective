@@ -27,7 +27,7 @@ import "./index.css";
 const worker = perspective.default.shared_worker();
 
 const getTable = async (): Promise<perspective.Table> => {
-    const req = fetch("./superstore.arrow");
+    const req = fetch("./superstore.feather");
     const resp = await req;
     const buffer = await resp.arrayBuffer();
     return await worker.table(buffer as any);

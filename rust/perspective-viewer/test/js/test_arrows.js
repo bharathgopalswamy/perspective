@@ -14,7 +14,7 @@ const fs = require("fs");
 const path = require("path");
 
 /**
- * Returns an `ArrayBuffer` containing the contents of a `.arrow` file
+ * Returns an `ArrayBuffer` containing the contents of a `.feather` file
  * located at `arrow_path`.
  *
  * Because `fs.readFileSync` shares its underlying buffer
@@ -35,7 +35,7 @@ function load_arrow(arrow_path) {
 }
 
 const int_float_str_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "int_float_str.arrow")
+    path.join(__dirname, "..", "arrow", "int_float_str.feather")
 );
 
 module.exports = {

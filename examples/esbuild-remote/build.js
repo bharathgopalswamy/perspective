@@ -27,7 +27,7 @@ async function build() {
         target: "es2020",
         loader: {
             ".ttf": "file",
-            ".arrow": "file",
+            ".feather": "file",
         },
         assetNames: "[name]",
     });

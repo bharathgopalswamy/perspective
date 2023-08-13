@@ -27,7 +27,7 @@ const examples = fs.readdirSync("static/blocks").map((ex) => {
             (x) =>
                 !x.startsWith(".") &&
                 !x.endsWith(".png") &&
-                !x.endsWith(".arrow")
+                !x.endsWith(".feather")
         )
         .map((x) => {
             return {

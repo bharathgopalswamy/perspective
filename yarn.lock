@@ -15040,7 +15040,12 @@ stylehacks@^5.1.1:
     browserslist "^4.21.4"
     postcss-selector-parser "^6.0.4"
 
-superstore-arrow@1.0.0, superstore-arrow@^1.0.0:
+superstore-arrow@2.0.0, superstore-arrow@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/superstore-arrow/-/superstore-arrow-2.0.0.tgz#ed95c12f876351410c48bb43a3a2a45d6d7d9cb5"
+  integrity sha512-fXX3GT849Q0QvGeGAg/SWomJy3lV2UBAL3NiEJ31sd7VNBprfHAugpQUjZY8vpi9c0QY0vnNUz9pmGrGqZMwhg==
+
+superstore-arrow@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/superstore-arrow/-/superstore-arrow-1.0.0.tgz"
   integrity sha512-kDG1JykWoNYi0CYv1NWEwqZoNl/Yc/i4GIzfVQSeNvMfnOdyzUw/3gIXrw8qZtSQQCf9yp5jnXvWkvsfqJlBqA==

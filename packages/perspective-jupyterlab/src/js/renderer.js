@@ -224,7 +224,7 @@ function activate(app, restorer, themeManager) {
         app.docRegistry.addFileType({
             name: "arrow",
             displayName: "arrow",
-            extensions: [".arrow"],
+            extensions: [".feather"],
             mimeTypes: ["application/octet-stream"],
             contentType: "file",
             fileFormat: "base64",

@@ -14,7 +14,7 @@ const fs = require("fs");
 const path = require("path");
 
 /**
- * Returns an `ArrayBuffer` containing the contents of a `.arrow` file
+ * Returns an `ArrayBuffer` containing the contents of a `.feather` file
  * located at `arrow_path`.
  *
  * Because `fs.readFileSync` shares its underlying buffer
@@ -35,51 +35,51 @@ function load_arrow(arrow_path) {
 }
 
 const chunked_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "chunked.arrow")
+    path.join(__dirname, "..", "arrow", "chunked.feather")
 );
 const test_null_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "test_null.arrow")
+    path.join(__dirname, "..", "arrow", "test_null.feather")
 );
 const test_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "test.arrow")
+    path.join(__dirname, "..", "arrow", "test.feather")
 );
 const partial_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "partial.arrow")
+    path.join(__dirname, "..", "arrow", "partial.feather")
 );
 const partial_missing_rows_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "partial_missing_rows.arrow")
+    path.join(__dirname, "..", "arrow", "partial_missing_rows.feather")
 );
 const int_float_str_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "int_float_str.arrow")
+    path.join(__dirname, "..", "arrow", "int_float_str.feather")
 );
 const int_float_str_update_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "int_float_str_update.arrow")
+    path.join(__dirname, "..", "arrow", "int_float_str_update.feather")
 );
 const int_float_str_file_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "int_float_str_file.arrow")
+    path.join(__dirname, "..", "arrow", "int_float_str_file.feather")
 );
 const date32_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "date32.arrow")
+    path.join(__dirname, "..", "arrow", "date32.feather")
 );
 const date64_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "date64.arrow")
+    path.join(__dirname, "..", "arrow", "date64.feather")
 );
 const dict_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "dict.arrow")
+    path.join(__dirname, "..", "arrow", "dict.feather")
 );
 const dict_update_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "dict_update.arrow")
+    path.join(__dirname, "..", "arrow", "dict_update.feather")
 );
 const numbers_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "number_types.arrow")
+    path.join(__dirname, "..", "arrow", "number_types.feather")
 );
 const all_types_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "all_types_small.arrow")
+    path.join(__dirname, "..", "arrow", "all_types_small.feather")
 );
 
 // uint8-64 x2, int8-64 x2, date, datetime, bool, string
 const all_types_multi_arrow = load_arrow(
-    path.join(__dirname, "..", "arrow", "all_types_small_multi.arrow")
+    path.join(__dirname, "..", "arrow", "all_types_small_multi.feather")
 );
 
 module.exports = {

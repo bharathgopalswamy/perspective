@@ -25,7 +25,7 @@ SUPERSTORE_ARROW = os.path.join(
     "..",
     "node_modules",
     "superstore-arrow",
-    "superstore.arrow",
+    "superstore.feather",
 )
 
 with open(SUPERSTORE_ARROW, "rb") as f:

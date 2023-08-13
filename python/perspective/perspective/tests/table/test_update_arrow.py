@@ -20,11 +20,11 @@ from datetime import date, datetime
 from pytest import mark
 from perspective.table import Table
 
-SOURCE_STREAM_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "int_float_str.arrow")
-SOURCE_FILE_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "int_float_str.arrow")
-PARTIAL_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "int_float_str_update.arrow")
-DICT_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "dict.arrow")
-DICT_UPDATE_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "dict_update.arrow")
+SOURCE_STREAM_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "int_float_str.feather")
+SOURCE_FILE_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "int_float_str.feather")
+PARTIAL_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "int_float_str_update.feather")
+DICT_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "dict.feather")
+DICT_UPDATE_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "dict_update.feather")
 
 names = ["a", "b", "c", "d"]
 

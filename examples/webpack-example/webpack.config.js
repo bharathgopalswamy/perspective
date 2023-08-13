@@ -34,7 +34,7 @@ module.exports = {
                 use: [{ loader: "style-loader" }, { loader: "css-loader" }],
             },
             {
-                test: /\.arrow$/,
+                test: /\.feather$/,
                 use: [{ loader: "arraybuffer-loader" }],
             },
         ],

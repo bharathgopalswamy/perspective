@@ -807,7 +807,7 @@ jobs:
             - uses: actions/upload-artifact@v3
               with:
                   name: perspective-js-benchmarks
-                  path: tools/perspective-bench/dist/benchmark-js.arrow
+                  path: tools/perspective-bench/dist/benchmark-js.feather
 
     ##########################################################################################################################
     ##########################################################################################################################
@@ -1813,7 +1813,7 @@ jobs:
             - uses: actions/upload-artifact@v3
               with:
                   name: perspective-python-benchmarks
-                  path: tools/perspective-bench/dist/benchmark-python.arrow
+                  path: tools/perspective-bench/dist/benchmark-python.feather
 
     ##########################################################################################################################
     ##########################################################################################################################
@@ -2016,6 +2016,6 @@ jobs:
                       *.whl
                       *.tar.gz
                       *.tgz
-                      *.arrow
+                      *.feather
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

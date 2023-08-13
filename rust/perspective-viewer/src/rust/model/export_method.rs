@@ -39,8 +39,8 @@ impl ExportMethod {
             Self::JsonAll => ".all.json",
             Self::Html => ".html",
             Self::Png => ".png",
-            Self::Arrow => ".arrow",
-            Self::ArrowAll => ".all.arrow",
+            Self::Arrow => ".feather",
+            Self::ArrowAll => ".all.feather",
             Self::JsonConfig => ".config.json",
         }
     }

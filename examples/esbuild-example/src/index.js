@@ -20,7 +20,7 @@ import "@finos/perspective-viewer/dist/css/pro-dark.css";
 
 import "./index.css";
 
-import arrow from "superstore-arrow/superstore.arrow";
+import arrow from "superstore-arrow/superstore.feather";
 const req = fetch(arrow);
 const worker = perspective.shared_worker();
 

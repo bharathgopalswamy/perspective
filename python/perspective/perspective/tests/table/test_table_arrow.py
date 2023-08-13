@@ -17,9 +17,9 @@ import pyarrow as pa
 from datetime import date, datetime
 from perspective.table import Table
 
-DATE32_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "date32.arrow")
-DATE64_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "date64.arrow")
-DICT_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "dict.arrow")
+DATE32_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "date32.feather")
+DATE64_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "date64.feather")
+DICT_ARROW = os.path.join(os.path.dirname(__file__), "arrow", "dict.feather")
 
 names = ["a", "b", "c", "d"]
 

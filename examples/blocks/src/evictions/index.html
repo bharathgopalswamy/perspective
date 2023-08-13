@@ -44,7 +44,7 @@
                 const resp = await fetch(
                     URL
                     // "5cei-gny5.csv"
-                    // "evictions.all.arrow"
+                    // "evictions.all.feather"
                 );
                 const csv = await resp.text();
                 const table = await WORKER.table(csv);
